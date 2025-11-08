@@ -6,22 +6,33 @@
 ⦁	手动构建多头自注意力、位置编码、前馈网络等关键模块，适配论文学习与二次开发
 
 🛠️ 环境准备
+
 创建并激活 Conda 环境
+
 conda create -n transformer python=3.8
+
 conda activate transformer  # 激活环境（后续所有操作需在此环境下执行）
 
 安装依赖包
 pip install -r requirements.txt
 
 配置 Weights & Biases（可选，推荐）
+
 若需可视化训练过程，需先注册 W&B 账号，获取 API 密钥后执行：
+
 wandb login
 
+
 🚀 快速开始
+
 训练模型
+
 bash train.sh
+
 测试模型
+
 bash test.sh
 
 数据集在文件夹：multi30k中（避免由于网络问题，无法在代码中直接下载）
+
 训练权重文件：https://drive.google.com/file/d/141Ie2s-jb07g-K_jnSF8-CoZrUFb8Lhd/view?usp=drive_link
