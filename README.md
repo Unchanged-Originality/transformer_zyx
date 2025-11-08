@@ -16,3 +16,17 @@ conda activate transformer  # 激活环境（后续所有操作需在此环境�
 ### 安装依赖包
 ```bash
 pip install -r requirements.txt
+
+###配置 Weights & Biases（可选，推荐）
+若需可视化训练过程，需先注册 W&B 账号，获取 API 密钥后执行：
+
+```bash
+wandb login
+
+## 🚀 快速开始
+### 训练模型
+```bash
+bash train.sh
+###测试模型
+```bash
+bash test.sh
